@@ -1,0 +1,91 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Light background for contrast */
+    padding: 20px; /* Padding around the main content */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items in the row */
+    justify-content: center; /* Center the cards */
+}
+
+.card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 15px; /* Space between cards */
+    overflow: hidden; /* Clip overflow for rounded corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+    .card:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+    }
+
+.card-header {
+    background-color: #007bff; /* Blue background for header */
+    color: white;
+    padding: 10px 15px; /* Padding around the header */
+}
+
+.card-title {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: space-between; /* Space title and edit icon */
+    align-items: center; /* Align items vertically */
+}
+
+.card-body {
+    padding: 15px; /* Padding around the body */
+}
+
+    .card-body p {
+        margin-bottom: 10px; /* Space between paragraphs */
+    }
+
+.card-footer {
+    background-color: #f7f7f7; /* Light background for footer */
+    padding: 10px 15px; /* Padding around the footer */
+    border-top: 1px solid #e0e0e0; /* Top border for footer */
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth button transition */
+}
+
+    .btn:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+    }
+
+.btn-success {
+    background-color: #28a745; /* Green background for Add to Cart */
+    border-color: #28a745; /* Same as background */
+}
+
+.btn-outline-primary {
+    border-color: #007bff; /* Custom border color for outline button */
+    color: #007bff; /* Custom text color for outline button */
+}
+
+    .btn-outline-primary:hover {
+        background-color: #007bff; /* Change background on hover */
+        color: white; /* Change text color on hover */
+    }
+
+.badge {
+    font-size: 0.9rem; /* Smaller font size for badges */
+    padding: 5px 10px; /* Padding for badges */
+    border-radius: 20px; /* Rounded badges */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .card-header, .card-body, .card-footer {
+        padding: 10px; /* Smaller padding on mobile */
+    }
+}
